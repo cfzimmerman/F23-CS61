@@ -1,0 +1,10 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     sandbox
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: __Z9get_i_valv, symObjAddr: 0x0, symBinAddr: 0x100003ED0, symSize: 0xC }
+  - { offsetInCU: 0x3F, offset: 0x3F, size: 0x8, addend: 0x0, symName: _i, symObjAddr: 0x98, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offsetInCU: 0x5B, offset: 0x5B, size: 0x8, addend: 0x0, symName: _s, symObjAddr: 0x9C, symBinAddr: 0x100008004, symSize: 0x0 }
+  - { offsetInCU: 0x2D1A, offset: 0x2D1A, size: 0x8, addend: 0x0, symName: __Z9get_i_valv, symObjAddr: 0x0, symBinAddr: 0x100003ED0, symSize: 0xC }
+  - { offsetInCU: 0x2D37, offset: 0x2D37, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0xC, symBinAddr: 0x100003EDC, symSize: 0x8C }
+...

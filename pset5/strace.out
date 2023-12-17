@@ -1,0 +1,25 @@
+3596  execve("/usr/bin/sh", ["sh", "-c", "sleep 10 && echo foo & echo bar"], 0xffffd5740e48 /* 14 vars */) = 0
+3596  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffaf33cf50) = 3597
+3596  exit_group(0)                     = ?
+3596  +++ exited with 0 +++
+3597  clone(child_stack=0xffffc46f8980, flags=CLONE_VM|CLONE_VFORK|SIGCHLD <unfinished ...>
+3598  execve("/usr/bin/sleep", ["sleep", "10"], 0xaaaac3fc9728 /* 14 vars */ <unfinished ...>
+3597  <... clone resumed>)              = 3598
+3598  <... execve resumed>)             = 0
+3597  wait4(-1, 0xffffc46f8924, 0, NULL) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+3598  --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+3597  --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+3597  wait4(-1, 0xffffc46f8924, 0, NULL) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+3598  --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+3597  --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+3597  wait4(-1, 0xffffc46f8924, 0, NULL) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+3598  --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+3597  --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+3597  wait4(-1,  <unfinished ...>
+3598  exit_group(0)                     = ?
+3598  +++ exited with 0 +++
+3597  <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 3598
+3597  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3598, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+3597  wait4(-1, 0xffffc46f8924, WNOHANG, NULL) = -1 ECHILD (No child processes)
+3597  exit_group(0)                     = ?
+3597  +++ exited with 0 +++
