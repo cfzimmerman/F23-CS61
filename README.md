@@ -35,7 +35,7 @@ I wrote a performant heap memory allocator with support for malloc, free, calloc
 ### 3. WeensyOS
 
 Eddie wrote an operating system for this class that I got to work with. Given the handout OS, the challenge was to add virtual memory to it (the handout code uses physical addresses). I did so, enforcing process isolation and adding a fork syscall along the way. Note that I worked within the kernel file below, but that work is not all mine:
-Implementation: [https://github.com/cfzimmerman/F23-CS61/blob/main/pset3/kernel.cc](https://github.com/cfzimmerman/F23-CS61/blob/main/pset3/kernel.cc)
+- Impl: [https://github.com/cfzimmerman/F23-CS61/blob/main/pset3/kernel.cc](https://github.com/cfzimmerman/F23-CS61/blob/main/pset3/kernel.cc)
 
 ### 2. Binary bomb
 
