@@ -133,9 +133,6 @@ bool rw_rec::try_lock_type(int lock_tp) {
         return false;
     }
     bool res = acquired_lock(std::this_thread::get_id(), lock_tp);
-    {
-        std::string status = res ? "true" : "false";
-    }
     return res;
 }
 
